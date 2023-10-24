@@ -1,0 +1,115 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: large;
+}
+header{
+    display: flex;
+    /*background-color: blueviolet;*/
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+.divTitulo{
+    flex: 80%;
+    background-color: darkgreen;
+}
+.articulo-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.tarjeta{
+    border: 1px solid gold;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: green 1px 1px 10px;
+    margin: 15px;
+}
+.tarjeta img{
+    width: 150px;
+    height: 280px;
+}
+.descripción{
+    text-align: center;
+}
+.precio{
+    text-align: center;
+}
+.cuerpo-tarjeta{
+    text-align: center;
+    background-color: darkgoldenrod;
+}
+.titulo-tarjeta{
+    text-align: center;
+    font-weight: 800;
+    padding-bottom: 20px;
+    border-bottom: 1px solid darkorange;
+    background-color: red;
+    font-size: 20px;
+}
+.tarjeta button{
+    margin: 10px;
+    padding: 8px;
+    background-color: white;
+    color: blueviolet;
+    font-size: 25px;
+    border: 1px color gold;
+    border-radius: 10px;
+}
+nav{
+    background-color: darkgoldenrod;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+nav a{
+    color: red;
+    font-size: 20px;
+    padding: 15px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: white;
+    color: blueviolet;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    flex: 30%;
+    background-color: darkgreen;
+    padding: 10px;
+    text-align: center;
+}
+section{
+    flex: 70%;
+    background-color: darkviolet;
+    padding: 20px;
+}
+article{
+    margin-bottom: 35px;
+}
+article p{
+    text-align: justify;
+}
+footer{
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (max-width:700px){
+nav{
+    flex-flow: column;
+   }
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
